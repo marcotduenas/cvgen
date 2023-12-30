@@ -37,8 +37,24 @@
 				<input type="text" id="website" name="website" placeholder="LinkedIn, Github, Portfolio" required><br>
 				<label>Softwares/technologies that you know or use (Follow the pattern)</label><br>
 				<textarea id="about" name="about" placeholder="JavaScript&#10Python&#10Django" required></textarea><br>
+				<div id="education-section">
+					<div class="education">
+						<label>Education</label><br>
+						<input type="text" class="education-input" placeholder="Institution:course">
+					</div>
+					<button class="add-button" type="button" onClick="add_education()">+</button>
+				</div>
+				<div id="work-section">
+					<div class="work">
+						<label>Experience</label><br>
+						<input type="text" class="work-input" placeholder="Company: role (1999-2000)"><br>
+						<textarea id="about" name="about" placeholder="Achievements, activities, things you did..." required></textarea><br>
+					</div>
+					<button class="add-button" type="button" onClick="add_work()">+</button>
+				</div>
 				<button type="submit">Submit</button>
 			</form>
 		</div>
+		<script src="./app/index.js"></script>
 	</body>
 </html>
