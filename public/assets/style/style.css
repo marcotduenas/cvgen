@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+	height: 100vh;
+	background-color: #fff;
+}
+
+.title-bar{
+	display: flex;
+	justify-content: space-around;
+	align-items:  center;
+	padding: 1.5rem 1.5rem 1rem;
+	border-bottom: 2px solid #ddd;
+}
+
+.new-cv-button{
+	cursor: pointer;
+	border:  2px solid #212121;
+	border-radius: 6px;
+	background: #212121;
+	color: #fff;
+	font-weight: 800;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.product-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1.5rem;
+	width: 50%;
+	margin: auto;
+}
+
+.product-info > ul{
+	list-style:  none;
+}
+
+.product-info > ul > li{
+	padding: 10px;
+	color: #6D6969;
+	font-size: 1.5rem;
+}
+
+.product-info ul > li > a{
+	color: #208CEC;
+}
+
+.product-info ul > li > a:visited{
+	text-decoration: none;
+	text-decoration-color: none;
+}
+
+.user-info-form{
+	border: 2px solid #ddd;
+	width: 50vw;
+	margin: auto;
+	
+}
+
+.user-info-form form{
+	padding: 10px;
+}
+
+.user-info-form > h6{
+	padding: 10px;
+}
+
+.user-info-form form > label{
+	color: #6D6969;
+}
+
+.user-info-form  form > input{
+	padding: 5px;
+	margin: .5rem 0 .5rem;
+}
+
+textarea{
+	margin: .5rem 0  .5rem;
+	resize: none;
+	width: 11.7rem;
+	height: 5rem;
+}
