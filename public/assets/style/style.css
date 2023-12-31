@@ -99,8 +99,6 @@ textarea{
 	margin:  .5rem 0 .5rem;
 }
 
-
-
 .add-button{
 	background: #212121;
 	color: #fff;
@@ -116,4 +114,31 @@ textarea{
 .add-button:hover{
 	background-color: #6D6969;
 	border: 2px solid #6D6969;
+}
+
+.submit-button{
+	background: #212121;
+	color: #fff;
+	border: 2px solid #212121;
+	border-radius: 6px;
+	width: 5rem;
+	height: 3rem;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.save-user-cv{
+	border: 2px solid #ddd;
+	margin: auto;
+	width: 50vw;
+	padding: 30px;
+}
+
+.save-user-cv > h6{
+	padding: 10px;
+}
+
+.save-user-cv > p{
+	color: #6D6969;
+	padding: 10px;
 }

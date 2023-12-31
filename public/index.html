@@ -15,7 +15,7 @@
 			<h1>📝Create a CV for your own use</h1>
 			<ul>
 				<li>🖨️ Upate your CV whenever you need, it's a PDF</li>
-				<li>⚙️  Lightweight, customizable and clean layout</li>
+				<li>⚙️  Lightweight, customizable and with a clean layout</li>
 				<li>🤳 Use the QR Code to redirect people to your website</li>
 				<li>🙋‍♂️ Made by <a href="https://www.instagram.com/marcot.duenas/">@marcot.duenas</a></li>
 			</ul>
@@ -36,8 +36,7 @@
 				<label>Website</label><br>
 				<input type="text" id="website" name="website" placeholder="LinkedIn, Github, Portfolio" required><br>
 				<label>Softwares/technologies that you know or use (Follow the pattern)</label><br>
-				<textarea id="about" name="about" placeholder="JavaScript&#10Python&#10Django" required></textarea><br>
-				<div id="education-section">
+				<textarea id="about" name="about" placeholder="JavaScript&#10Python&#10Django" required></textarea><br> <div id="education-section">
 					<div class="education">
 						<label>Education</label><br>
 						<input type="text" class="education-input" placeholder="Institution:course">
@@ -52,9 +51,14 @@
 					</div>
 					<button class="add-button" type="button" onClick="add_work()">+</button>
 				</div>
-				<button type="submit">Submit</button>
+				<button class="submit-button" type="submit" onClick="get_form_values()">Submit</button>
 			</form>
 		</div>
-		<script src="./app/index.js"></script>
+		<div class="save-user-cv">
+			<h6>SAVE/EDIT YOUR CV</h6>
+			<p>The document will be printed as .pdf file, you shouldn't have problems to modify it.
+		</div>
+		<script src="./app/add_input_options.js"></script>
+		<script src="./app/form_data_treatment.js"></script>
 	</body>
 </html>
