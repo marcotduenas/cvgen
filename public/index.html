@@ -22,7 +22,7 @@
 		</div>
 		<div class="user-info-form">
 			<h6>FILL OUT YOUR CV</h6>
-			<form action="">
+			<form action="./pages/cv.html">
 				<label>Full name</label><br>
 				<input type="text" id="fullname" name="fullname" placeholder="John  Doe" required><br>
 				<label>Role</label><br>
@@ -35,22 +35,12 @@
 				<input type="text" id="phone" name="phone" placeholder="+99(99)99999-9999" required><br>
 				<label>Website</label><br>
 				<input type="text" id="website" name="website" placeholder="LinkedIn, Github, Portfolio" required><br>
-				<label>Softwares/technologies that you know or use (Follow the pattern)</label><br>
-				<textarea id="about" name="about" placeholder="JavaScript&#10Python&#10Django" required></textarea><br> <div id="education-section">
-					<div class="education">
-						<label>Education</label><br>
-						<input type="text" class="education-input" placeholder="Institution:course">
-					</div>
-					<button class="add-button" type="button" onClick="add_education()">+</button>
-				</div>
-				<div id="work-section">
-					<div class="work">
-						<label>Experience</label><br>
-						<input type="text" class="work-input" placeholder="Company: role (1999-2000)"><br>
-						<textarea id="work-desc" name="about" placeholder="Achievements, activities, things you did..." required></textarea><br>
-					</div>
-					<button class="add-button" type="button" onClick="add_work()">+</button>
-				</div>
+				<label>Softwares/technologies that you know or use <b>(ONE item per line)</b></label><br>
+				<textarea id="tech" name="about" placeholder="JavaScript&#10Python&#10Django" required></textarea><br>
+				<label>Education <b>(ONE item per line)</b></label><br>
+				<textarea id="education" name="education" placeholder="University of Pineaple: PhD Computer Science" required></textarea><br>
+				<label>Professional experience <b>(ONE item per line)</b></label><br>
+				<textarea id="work" name="work" placeholder="University of Pineaple: PhD Computer Science" required></textarea><br>
 				<button class="submit-button" type="submit" onClick="get_form_values()">Submit</button>
 			</form>
 		</div>
