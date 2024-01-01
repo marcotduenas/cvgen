@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.info-grid{
+	display: grid;
+	gap: 7rem;
+	margin: auto;
+	width: 50vw;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+}
+
+.name-and-role{
+	padding: 1rem;
+}
+
+#about-me{
+	text-align: justify;
+}
+
+#role{
+	text-transform: uppercase;
+}
+
+.contact{
+	padding: 1rem;
+}
+
+.contact h3{
+	color: #0E5F88;
+}
+
+#email, #phone{
+	text-align: justfy;
+}
+
+.tech-stack{
+	width: 50vw;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tech-stack > h3{
+	padding: 1rem;
+	color: #0E5f88;
+}
+
+.education-experience{
+	padding: 1rem;
+}
+
+.education-experience > h3{
+	color: #0E5f88;
+}
+
+.work-experience{
+	padding: 1rem;
+}
+
+.work-experience > h3{	
+	color: #0E5f88;
+}
+
+@media (min-width: 600px){
+  .info-grid{
+	  grid-template-columns: repeat(2, 1fr);
+  }
+}
