@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Your CV is ready!</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../assets/style/cv-style.css" rel="stylesheet">
+		<script src="../lib/qrious/qrious.min.js"></script>
+		<script src="../app/cv_create.js"></script>
+	</head>
+	<body onload="replace_cv_info(); generate_website_qr_code(); prompt_for_print()">
+		<div class="name-and-role info">
+			<h1 id="full-name">John Doe</h1>	
+			<h3 id="role">Back-end developer</h3>
+			<p id="about-me">Indie developer, working with JS and PHP, KISS philosophy, let's do it!</p>
+		</div>
+		<div class="contact info">
+			<h3>Contact</h3>
+			<img id="qr-url" alt="QR CODE"></img>
+			<h4>E-mail</h4>
+			<p id="email">johndoe@dev.com</p>
+			<h4>Phone number</h4>
+			<p id="phone">+55 (99)99999-9999</p>
+		</div>
+		<div class="tech-stack info">
+			<h3>Technologies/Software</h3>
+			<p id="tech"></p>
+		</div>
+		<div class="education-experience info">
+			<h3>Education</h3>
+			<p id="education"></p>
+		</div>
+		<div class="work-experience info">
+			<h3>Work experience</h3>
+			<p id="work"></p>
+		</div>
+		<script>
+			function generate_website_qr_code(){
+				const qr_code_data = get_cookie_value('user_website');
+				if (qr_code_data){
+					const options = {
+						size: 200,
+					};
+
+					const website_qr_code = new QRious(options);
+
+					website_qr_code.set({
+						value: qr_code_data,
+					});
+
+					const qr_img_location = document.getElementById('qr-url');
+					qr_img_location.src = website_qr_code.toDataURL();
+				}else{
+					console.error('O cookie "website_url" não foi encontrado.');
+				}
+			}
+		</script>
+	</body>
+</html>
