@@ -19,6 +19,14 @@ body{
 	border-bottom: 2px solid #ddd;
 }
 
+.languages > button{
+	font-size: 2rem;
+	border: 0px;
+	outline: none;
+	background-color: #f8f8f8;
+	
+}
+
 .new-cv-button{
 	cursor: pointer;
 	border:  2px solid #212121;
@@ -29,6 +37,7 @@ body{
 	padding: 10px;
 	text-decoration: none;
 }
+
 
 .product-info{
 	display: flex;
