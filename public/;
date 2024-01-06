@@ -1,0 +1,37 @@
+function translate_index_to_portuguese(){
+
+	// Section for product-info class
+	let title_info_section = document.querySelector('.product-info h1');
+	let list_info_section = document.querySelectorAll('.product-info li');	
+
+	title_info_section.textContent = "📝Crie seu próprio seu CV";
+	list_info_section[0].textContent = "🖨️ Atualize seu CV sempre que precisar, é um PDF";
+	list_info_section[1].textContent = "⚙️ Leve, customizável e com um layout limpo";
+	list_info_section[2].textContent = "🤳 Use o QR Code para redirecionar pessoas para seu website";
+	list_info_section[3].textContent = "🙋‍♂️ Feito por @marcot.duenas";
+
+	//Section for user-info-form class
+	let title_form_section = document.querySelector('.user-info-form h6');
+	let form_labels = document.querySelectorALl('.user-info-form label');
+
+	form_labels.forEach(function(label){
+		switch (label.textContent){
+			case "Full name":
+				label.textContent = "Nome completo";
+			case "Role":
+				label.textContent = "Cargo";
+			case "About you":
+				label.textContent = "Sobre você";
+			case "Phone":
+				label.textContent = "Telefone"
+		}
+	});
+
+	title_form_section.textContent = "PREENCHA SEU CV"
+
+
+}
+
+function return_index_to_english(){
+	location.reload();	
+}
