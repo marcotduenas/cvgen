@@ -55,6 +55,22 @@ function translate_index_to_portuguese(){
 
 }
 
-function return_index_to_english(){
+function translate_cv_to_portuguese(){
+	let contact_heading = document.querySelector('.contact h3');
+	//For the h4 tags
+	let contact_subheadings = document.querySelectorAll('.contact h4');
+	let tech_stack_heading = document.querySelector('.tech-stack h3');
+	let education_heading = document.querySelector('.education-experience h3');
+	let work_heading= document.querySelector('.work-experience h3');
+
+
+	contact_heading.textContent = "Contato";
+	contact_subheadings[1].textContent = "Telefone";
+	tech_stack_heading.textContent = "Tecnologias/Software";
+	education_heading.textContent = "Educação"
+	work_heading.textContent = "Experiência profissional"
+}
+
+function return_page_to_english(){
 	location.reload();	
 }
