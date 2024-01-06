@@ -43,3 +43,25 @@ h3{
 	color: #0E5f88;
 }
 
+.languages{
+	display: flex;
+	padding: 1rem;
+	width: 55vw;
+	margin: auto;
+}
+
+.languages > button{
+	padding: 10px 5px 10px;
+	font-size: 2rem;
+	border: 0px;
+	outline: none;
+	background-color: #f8f8f8;
+	display: flex;
+	flex-direction: wrap;
+}
+
+@media print{
+	.languages{
+		display: none;
+	}
+}

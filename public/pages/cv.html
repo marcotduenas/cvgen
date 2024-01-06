@@ -34,6 +34,10 @@
 			<h3>Work experience</h3>
 			<p id="work"></p>
 		</div>
+		<div class="languages">
+				<button type="button" onClick="translate_cv_to_portuguese()" id="br">🇧🇷</button>
+				<button type="button" onClick="return_page_to_english()" id="english">🇺🇸</button>
+		</div>
 		<script>
 			function generate_website_qr_code(){
 				const qr_code_data = get_cookie_value('user_website');
@@ -50,10 +54,8 @@
 
 					const qr_img_location = document.getElementById('qr-url');
 					qr_img_location.src = website_qr_code.toDataURL();
-				}else{
-					console.error('O cookie "website_url" não foi encontrado.');
-				}
 			}
 		</script>
+		<script src="../app/language_support.js"></script>
 	</body>
 </html>
