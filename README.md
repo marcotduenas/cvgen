@@ -15,7 +15,7 @@ was planning to use PHP to build this tool but, I'm still not able to rent a VPS
 No framework were used during the development of this project.
 
 ## Usage
-**cvgen has a good user interface and you probably will not have problems to undersand how the software works.
+**cvgen** has a good user interface and you probably will not have problems to undersand how the software works.
 
 # Support
 If you'd like to support the project, I would appreciate some help on translating it to other languages. Currently
